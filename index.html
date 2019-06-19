@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bulma/css/bulma.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            body .is-fluid{box-shadow:0px 8px 16px rgba(0,0,0,0.2)}
+        </style>
+    </head>
+    <body>
+    
+    <div class="container is-fluid">
+        <div class="navbar">
+            <div class="navbar_link brand">
+               Jordan's stuff
+             </div>
+             <div class="navbar_link toggle_nav">
+               <i class="fas fa-bars"></i>
+               <i class="fas fa-times no_show"></i>
+             </div>
+           <nav class="navbar_items">
+             <div class="navbar_link">
+               <a href="">gophercises</a>
+             </div>
+             <div class="navbar_link">
+               Longer Link
+             </div>
+             <div class="navbar_link">
+               Link
+             </div>
+           </nav>
+           <nav class="navbar_items navbar_items_right">
+             <div class="navbar_link">
+               Link
+             </div>
+             <div class="navbar_link">
+               Link
+             </div>
+           </nav>
+         </div>
+        <section class="hero is-medium is-dark">
+            <div class="hero-body">
+                <div class="container">
+                <h1 class="title">
+                    Primary bold title
+                </h1>
+                <h2 class="subtitle">
+                    Primary bold subtitle
+                </h2>
+                </div>
+            </div>
+        </section>
+        <div class="tile">
+            <div class="tile is-vertical is-8">
+                <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                        <article class="tile is-child notification is-dark">
+                            <p class="title">Vertical...</p>
+                            <p class="subtitle">Top tile</p>
+                        </article>
+                        <article class="tile is-child notification is-info">
+                            <p class="title">...tiles</p>
+                            <p class="subtitle">Bottom tile</p>
+                        </article>
+                        <article class="tile is-child notification is-dark">
+                            <p class="title">Wide tile</p>
+                            <p class="subtitle">Aligned with the right tile</p>
+                            <div class="content">
+                            <!-- Content -->
+                            </div>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-info">
+                            <p class="title">Middle tile</p>
+                            <p class="subtitle">With an image</p>
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/640x480.png">
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-dark">
+                        <p class="title">Vertical...</p>
+                        <p class="subtitle">Top tile</p>
+                    </article>
+                    <article class="tile is-child notification is-info">
+                        <p class="title">...tiles</p>
+                        <p class="subtitle">Bottom tile</p>
+                    </article>
+                    <article class="tile is-child notification is-dark">
+                        <p class="title">Wide tile</p>
+                        <p class="subtitle">Aligned with the right tile</p>
+                        <div class="content">
+                        <!-- Content -->
+                        </div>
+                    </article>
+                </div>
+        </div>
+    </div>
+    <script src="js/burger.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    function navActive(e) {
+    var nav = document.getElementById('rm-class'),
+        anchor = nav.getElementsByTagName('a'),
+        current = window.location.pathname.split('/')[1];
+        for (var i = 0; i < anchor.length; i++) {
+            if(anchor[i].href == current) {
+                anchor[i].className = "active";
+            }
+        }
+    };
+    </script>
+    </body>
+</html>
+
